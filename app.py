@@ -28,10 +28,6 @@ def hello_world():
     allTodo=Todo.query.all()
     return render_template('index.html' , allTodo = allTodo)
 
-@app.route('/products')
-def products():
-    # allTodo = Todo.query.all()
-    return 'This is a sample route.'
 
 @app.route('/update/<int:sno>', methods=['GET', 'POST'])
 def update(sno):
