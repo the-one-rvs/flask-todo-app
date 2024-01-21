@@ -55,4 +55,4 @@ def delete(sno):
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()  # Create the database tables before running the app
-    app.run(debug=True, port=8000)
+    app.run(debug=False, port='0.0.0.0')
