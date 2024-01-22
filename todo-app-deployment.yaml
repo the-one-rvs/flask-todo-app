@@ -17,12 +17,8 @@ spec:
         app: todo-app
     spec:
       containers:
-      - name: flask-todo-app
-        image: todo-app
+      - name: todo-app
+        image: flask-todo-app
         imagePullPolicy: Never
-        # resources:
-        #   limits:
-        #     memory: "128Mi"
-        #     cpu: "500m"
         ports:
         - containerPort: 5000
